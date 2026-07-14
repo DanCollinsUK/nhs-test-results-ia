@@ -1,0 +1,11 @@
+.filter-panel__actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.filter-panel__actions .nhsuk-button {
+  width: 100%;
+  margin-bottom: 0;
+}

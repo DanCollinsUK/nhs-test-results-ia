@@ -1,0 +1,42 @@
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  border-bottom: 1px solid #d8dde0;
+  padding: 12px 16px;
+  min-height: 56px;
+  box-sizing: border-box;
+}
+
+.app-header__logo {
+  background: #005eb8;
+  border-radius: 4px;
+  padding: 4px 8px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.app-header__logo-text {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 0.5px;
+  line-height: 1;
+}
+
+.app-header__help {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  min-height: 44px;
+  padding: 0 8px;
+  color: #005eb8;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.app-header__help:hover {
+  text-decoration: underline;
+}

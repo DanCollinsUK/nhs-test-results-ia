@@ -1,0 +1,32 @@
+.contact-panel {
+  background: #ccdff1;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px 0;
+}
+
+.contact-panel__heading {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 19px;
+  margin: 0 0 8px;
+  color: #00386e;
+}
+
+.contact-panel__heading svg {
+  fill: #00386e;
+  flex: none;
+}
+
+.contact-panel__body p {
+  margin: 0 0 8px;
+}
+
+.contact-panel__body p:last-child {
+  margin-bottom: 0;
+}
+
+.contact-panel__body a {
+  font-weight: 600;
+}
