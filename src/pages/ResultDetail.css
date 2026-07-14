@@ -1,0 +1,23 @@
+.detail-page {
+  padding: 16px;
+  flex: 1;
+}
+
+.detail-page__date {
+  color: #4c6272;
+  margin: -8px 0 12px;
+}
+
+.detail-page__body {
+  margin: 16px 0;
+  line-height: 1.5;
+}
+
+.detail-page__body--summary {
+  font-weight: 700;
+  font-size: 19px;
+}
+
+.detail-page__gate {
+  margin-top: 16px;
+}

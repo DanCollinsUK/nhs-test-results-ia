@@ -1,0 +1,44 @@
+@import "nhsuk-frontend/dist/nhsuk/nhsuk-frontend.css";
+@import "nhsapp-frontend/dist/nhsapp.css";
+
+:root {
+  color-scheme: light;
+}
+
+html {
+  background: #f0f4f5;
+}
+
+body {
+  margin: 0;
+  background: #f0f4f5;
+  font-family: Frutiger, Arial, sans-serif;
+}
+
+#root {
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  max-width: 480px;
+  margin: 0 auto;
+  background: #f0f4f5;
+}
+
+.app-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* nhsuk-frontend already styles focus for .nhsuk-link and .nhsuk-button;
+   this covers our own chrome links (header, back link, tab bar) that don't
+   carry those classes, using the same NHS focus token. */
+a:focus-visible:not([class*="nhsuk-link"]):not([class*="nhsuk-button"]),
+button:focus-visible:not([class*="nhsuk-button"]),
+[tabindex]:focus-visible {
+  outline: 4px solid #ffeb3b;
+  outline-offset: 0;
+  background-color: #ffeb3b;
+  color: #212b32;
+  box-shadow: 0 -2px #ffeb3b, 0 4px #212b32;
+}

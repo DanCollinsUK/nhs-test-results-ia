@@ -1,0 +1,35 @@
+.tab-bar {
+  position: sticky;
+  bottom: 0;
+  background: #ffffff;
+  border-top: 1px solid #d8dde0;
+}
+
+.tab-bar__list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.tab-bar__item {
+  flex: 1;
+}
+
+.tab-bar__link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  min-height: 56px;
+  padding: 6px 4px;
+  color: #4c6272;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.tab-bar__link--active {
+  color: #005eb8;
+}
