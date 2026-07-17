@@ -15,7 +15,7 @@ export function ResultDetailStandard({ result }: ResultDetailStandardProps) {
 
   return (
     <div className="nhsuk-width-container-fluid detail-page">
-      <BackLink to="/">Back to test results</BackLink>
+      <BackLink to="/test-results">Back to test results</BackLink>
 
       <h1 className="nhsuk-heading-l">{result.testName}</h1>
       <p className="detail-page__date">{formatResultDate(result.date)}</p>

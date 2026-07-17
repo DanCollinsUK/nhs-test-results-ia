@@ -1,0 +1,141 @@
+.home-page {
+  padding: 16px;
+  flex: 1;
+}
+
+/* Profile card ------------------------------------------------------- */
+
+.profile-card__above {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: #005eb8;
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+/* Hub grid ------------------------------------------------------------ */
+
+.home-page__hub-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin: 24px 0;
+}
+
+.home-page__hub-grid .hub-tile {
+  margin-bottom: 0;
+}
+
+.hub-tile .nhsapp-card__container {
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 0;
+  padding: 16px;
+}
+
+.hub-tile .nhsapp-card__content {
+  width: 100%;
+}
+
+.hub-tile__icon {
+  align-items: center;
+  background: #ccdff1;
+  border-radius: 50%;
+  color: #00386e;
+  display: flex;
+  height: 40px;
+  justify-content: center;
+  margin-bottom: 12px;
+  width: 40px;
+}
+
+.hub-tile__link {
+  font-size: 16px;
+}
+
+.hub-tile .nhsapp-icon--chevron-right {
+  position: absolute;
+  right: 12px;
+  bottom: 14px;
+}
+
+/* NHS information and support ----------------------------------------- */
+
+.home-page__info-list {
+  background: #ffffff;
+  border: 1px solid #d8dde0;
+  border-radius: 12px;
+  list-style: none;
+  margin: 0 0 16px;
+  padding: 0;
+}
+
+.home-page__info-list li {
+  border-bottom: 1px solid #d8dde0;
+}
+
+.home-page__info-list li:last-child {
+  border-bottom: 0;
+}
+
+.home-page__info-list a {
+  display: block;
+  min-height: 44px;
+  padding: 12px 16px;
+}
+
+/* Campaign and feedback cards ------------------------------------------ */
+
+.home-page__campaign,
+.home-page__feedback {
+  margin-bottom: 16px;
+}
+
+/* The nhsapp-card colour-variant mixin only recolours the card title/link
+   for contrast against a coloured background, not the description text
+   (nhsapp-frontend's dark-blue variant is normally used title-only). Since
+   this card also carries a description, it needs its own contrast fix to
+   meet WCAG 2.2 AA against the dark blue background. */
+.home-page__campaign .nhsapp-card__description {
+  color: #ffffff;
+}
+
+.home-page__feedback-icon {
+  align-items: center;
+  background: #ffffff;
+  border-radius: 50%;
+  color: #004c23;
+  display: flex;
+  flex: none;
+  height: 40px;
+  justify-content: center;
+  padding: 8px;
+  width: 40px;
+}
+
+/* App help ---------------------------------------------------------- */
+
+.home-page__help {
+  display: flex;
+  justify-content: center;
+  padding: 8px 0 24px;
+}
+
+.home-page__help-link {
+  align-items: center;
+  border: 1px solid #005eb8;
+  border-radius: 24px;
+  color: #005eb8;
+  display: inline-flex;
+  font-weight: 600;
+  gap: 6px;
+  min-height: 44px;
+  padding: 0 20px;
+  text-decoration: none;
+}
+
+.home-page__help-link:hover {
+  text-decoration: underline;
+}
