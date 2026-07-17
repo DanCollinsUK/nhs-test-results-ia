@@ -19,7 +19,7 @@ export function ResultDetailSensitive({ result }: ResultDetailSensitiveProps) {
 
   return (
     <div className="nhsuk-width-container-fluid detail-page detail-page--sensitive">
-      <BackLink to="/">Back to test results</BackLink>
+      <BackLink to="/test-results">Back to test results</BackLink>
 
       <h1 className="nhsuk-heading-l">{result.testName}</h1>
       <p className="detail-page__date">{formatResultDate(result.date)}</p>
@@ -48,7 +48,7 @@ export function ResultDetailSensitive({ result }: ResultDetailSensitiveProps) {
           </ContactPanel>
           <button
             type="button"
-            className="nhsuk-button"
+            className="nhsuk-button nhsapp-button"
             onClick={() => setRevealed(true)}
           >
             I understand, show my result

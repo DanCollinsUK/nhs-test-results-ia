@@ -12,7 +12,7 @@ export function ResultDetailPage() {
   if (!result) {
     return (
       <div className="nhsuk-width-container-fluid detail-page">
-        <BackLink to="/">Back to test results</BackLink>
+        <BackLink to="/test-results">Back to test results</BackLink>
         <p className="detail-page__body">We could not find that result.</p>
       </div>
     );

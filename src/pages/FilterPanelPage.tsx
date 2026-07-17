@@ -87,19 +87,19 @@ export function FilterPanelPage() {
     if (status) params.set("status", status);
     if (category) params.set("category", category);
     if (source) params.set("source", source);
-    navigate({ pathname: "/", search: params.toString() });
+    navigate({ pathname: "/test-results", search: params.toString() });
   }
 
   function clearFilters() {
     setStatus("");
     setCategory("");
     setSource("");
-    navigate("/");
+    navigate("/test-results");
   }
 
   return (
     <div className="nhsuk-width-container-fluid detail-page filter-panel">
-      <BackLink to="/">Back to test results</BackLink>
+      <BackLink to="/test-results">Back to test results</BackLink>
       <h1 className="nhsuk-heading-l">Filter results</h1>
 
       <form onSubmit={applyFilters}>
@@ -126,12 +126,12 @@ export function FilterPanelPage() {
         />
 
         <div className="filter-panel__actions">
-          <button type="submit" className="nhsuk-button">
+          <button type="submit" className="nhsuk-button nhsapp-button">
             Apply filters
           </button>
           <button
             type="button"
-            className="nhsuk-button nhsuk-button--secondary"
+            className="nhsuk-button nhsuk-button--secondary nhsapp-button"
             onClick={clearFilters}
           >
             Clear filters

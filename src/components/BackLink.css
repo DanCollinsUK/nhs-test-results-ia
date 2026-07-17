@@ -1,14 +1,12 @@
+/* Extends the real nhsuk-back-link component (arrow, colour, focus and
+   visited states all come from nhsuk-frontend.css) with just enough padding
+   for a 44px minimum touch target, matching how nhsapp-button extends
+   nhsuk-button. */
 .back-link {
   display: inline-flex;
   align-items: center;
-  gap: 2px;
   min-height: 44px;
-  padding: 0 4px 0 0;
-  color: #005eb8;
+  padding-top: 12px;
+  padding-bottom: 12px;
   font-weight: 600;
-  text-decoration: none;
-}
-
-.back-link:hover {
-  text-decoration: underline;
 }

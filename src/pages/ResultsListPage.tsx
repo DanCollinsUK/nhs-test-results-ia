@@ -2,6 +2,7 @@ import { Link, useSearchParams } from "react-router-dom";
 import { results } from "../data/results";
 import { ResultCard } from "../components/ResultCard";
 import { Icon } from "../components/Icon";
+import { BackLink } from "../components/BackLink";
 import "./ResultsListPage.css";
 
 export function ResultsListPage() {
@@ -21,6 +22,7 @@ export function ResultsListPage() {
 
   return (
     <div className="nhsuk-width-container-fluid results-page">
+      <BackLink to="/">Back to home</BackLink>
       <div className="results-page__header">
         <h1 className="nhsuk-heading-l">Test results</h1>
         <Link
@@ -40,7 +42,7 @@ export function ResultsListPage() {
               : "You have no test results yet."}
           </p>
           {hasActiveFilters && (
-            <Link to="/" className="nhsapp-card__link">
+            <Link to="/test-results" className="nhsapp-card__link">
               Clear filters
             </Link>
           )}
