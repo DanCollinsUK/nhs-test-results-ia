@@ -14,7 +14,9 @@ const tabs = [
     to: "/profile",
     label: "Profile",
     icon: "account",
-    iconFilled: "accountFilled",
+    // nhsapp-frontend doesn't ship a filled account icon (unlike home/messages),
+    // so the active state relies on the colour change instead of an icon swap.
+    iconFilled: "account",
   },
 ] as const;
 

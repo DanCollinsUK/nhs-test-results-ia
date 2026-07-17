@@ -30,6 +30,14 @@ body {
   flex-direction: column;
 }
 
+/* Card chevrons are aria-hidden decoration; the whole card is clickable via
+   the link's ::after overlay (see nhsapp-card__link in card.njk). Without
+   this, a click landing exactly on the chevron pixel hits the icon instead
+   of the overlay underneath and silently fails to navigate. */
+.nhsapp-icon--chevron-right {
+  pointer-events: none;
+}
+
 /* nhsuk-frontend already styles focus for .nhsuk-link and .nhsuk-button;
    this covers our own chrome links (header, back link, tab bar) that don't
    carry those classes, using the same NHS focus token. */
