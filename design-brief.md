@@ -47,6 +47,10 @@ Screens:
 3. **Result detail — standard** — the workhorse template: what the test was, the result and its plain-English meaning, what to do next, who requested it, how to get help.
 4. **Result detail — sensitive / screening** — a distinct, calmer template for results that need careful handling (see below).
 
+**Home screen (entry point).** Not part of the Test Results IA. Included in the prototype
+so the results list can be seen in context — where a patient enters from and what they tap.
+Reference: `design/home-screen.png`.
+
 Shared chrome: the NHS App top bar (logo + App help) and the fixed bottom tab bar (Home / Messages / Profile).
 
 ## Key design decisions
